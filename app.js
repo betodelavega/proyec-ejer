@@ -23,20 +23,20 @@ function getCountryByIso3(isoCode) {
  */
 
 //Complete with your code
-//function getCountryTranslatedName(isoCode, language) {
-//  let countryTranslate = {};
-//  for (let i = 0; i < countries.length; i++) {
-//    if (isoCode === countries[i].iso3) {
-//      countryTranslate.isocode3 = countries[i].iso3;
-//      for (lang in countries[i].translations) {
-//        if (language === lang) {
-//          countryTranslate.translate = countries[i].translations[lang];
-//        }
-//      }
-//    }
-//  }
-//  return countryTranslate;
-//}
+function getCountryTranslatedName(isoCode, language) {
+  let countryTranslate = {};
+  for (let i = 0; i < countries.length; i++) {
+    if (isoCode === countries[i].iso3) {
+      countryTranslate.isocode3 = countries[i].iso3;
+      for (lang in countries[i].translations) {
+        if (language === lang) {
+          countryTranslate.translate = countries[i].translations[lang];
+        }
+      }
+    }
+  }
+  return countryTranslate;
+}
 
 /**Get an array of all the countries with the specified subregion
  * @param  {string} subregion
