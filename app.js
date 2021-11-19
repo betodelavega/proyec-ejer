@@ -42,15 +42,15 @@ function getCountryTranslatedName(isoCode, language) {
  * @param  {string} subregion
  * @returns {Array}
  */
-//function getCountriesBySubregion(subregion) {
-//  const countrySub = {};
-//  for (let i = 0; i < countries.length; i++) {
-//    if (countries[i].subregion === subregion) {
-//      countrySub[i] = countries[i];
-//    }
-//  }
-//  return countrySub;
-//}
+function getCountriesBySubregion(subregion) {
+  const countrySub = {};
+  for (let i = 0; i < countries.length; i++) {
+    if (countries[i].subregion === subregion) {
+      countrySub[i] = countries[i];
+    }
+  }
+  return countrySub;
+}
 
 function main() {
   console.log('///// Ejercicio 1 /////\n', getCountryByIso3('ARG'), '\n');
